@@ -7,7 +7,7 @@ package javaloancalc;
 
 /**
  *
- * @author Lucas
+ * @author Jangsoft
  */
 import java.util.Scanner;
 public class JavaLoanCalc {
@@ -28,5 +28,6 @@ public class JavaLoanCalc {
         System.out.println("The interest is " + interest + ".");
         float total = amount + interest;
         System.out.println("The total cost is " + total + ".");
+        System.out.println("Created by Jangsoft");
     }
 }
