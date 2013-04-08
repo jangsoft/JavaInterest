@@ -16,17 +16,22 @@ public class JavaLoanCalc {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        float amount;
+        float rate;
+        float time;
+        float interest;
+        float total;
         Scanner input = new Scanner(System.in);
         System.out.println("Hello. Welcome to the Java Loan and Interest Calculator!");
         System.out.print("Enter your loan amount: ");
-        int amount = input.nextInt();
+        amount = input.nextFloat();
         System.out.print("Enter your interest rate: ");
-        float rate = (float) (input.nextFloat() * 0.01);
+        rate = (float) (input.nextFloat() * 0.01);
         System.out.print("Enter your time: ");
-        float time = input.nextFloat();
-        float interest = amount * rate * time;
+        time = input.nextFloat();
+        interest = amount * rate * time;
         System.out.println("The interest is " + interest + ".");
-        float total = amount + interest;
+        total = amount + interest;
         System.out.println("The total cost is " + total + ".");
         System.out.println("Created by Jangsoft");
     }
